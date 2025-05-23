@@ -16,8 +16,8 @@ func isHappy(n int) bool {
 func sumOfSquares(n int) int {
 	sum := 0
 	for n > 0 {
-		digit := n % 10
-		sum += digit * digit
+		d := n % 10
+		sum += d * d
 		n /= 10
 	}
 	return sum
